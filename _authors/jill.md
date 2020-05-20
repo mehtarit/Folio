@@ -1,6 +1,6 @@
 ---
-short_name: jill
-name: Jill Smith
-position: Chief Editor
+short_name: Ritika
+name: Ritika Mehta
+position: Software Engineer
 ---
-Jill is an avid fruit grower based in the south of France.
+Ritika is a software engineer based in Austin, TX
