@@ -9,5 +9,10 @@ custom_css: home
     <div>Search</div>
 </nav>
 
-<h3>{{ site.posts.last.title }}</h3>
-<h4>{{ site.posts.last.date | date: '%B %d, %Y' }}</h4>
+<a href="{{ site.posts.last.url }}">
+    <article>
+        <p>Latest</p>
+        <h3>{{ site.posts.last.title }}</h3>
+        <h4>{{ site.posts.last.date | date: '%B %d, %Y' }}</h4>
+    </article>
+  </a>
