@@ -1,8 +1,14 @@
+
+@import "alignment";
+
 body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @extend %centered;
 }
+
+nav{ 
+  display: flex;
+}
+
 .current {
     color: green;
 }
