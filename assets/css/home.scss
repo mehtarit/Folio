@@ -6,3 +6,7 @@
 #home-hero {
     @extend %centered;
 }
+
+#home-logo > img {
+    width: 150px;
+}
