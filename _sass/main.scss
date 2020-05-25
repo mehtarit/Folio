@@ -12,3 +12,14 @@ nav{
 .current {
     color: green;
 }
+
+.mobile-hidden {
+  display: none;
+}
+
+$breakpoint-tablet: 768px;
+@media (min-width: $breakpoint-tablet) {
+  .mobile-hidden{
+    display: flex;
+  }
+}
