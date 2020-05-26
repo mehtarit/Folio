@@ -5,8 +5,13 @@
 
 #home-hero {
     @extend %centered;
+    background-color: $primary-color;
 }
 
 #home-logo > img {
-    width: 150px;
+    width: 140px;
+    border: black;
+    border-style: solid;
+    border-width: 5px;
+    margin-top: 15px;
 }

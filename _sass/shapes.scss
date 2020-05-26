@@ -1,3 +1,11 @@
+$primary-color: rgb(135,235,255);
+
 .rounded {
     border-radius: 50%;
+}
+
+.traingle-bottom {
+    border-left: solid 48vw transparent;
+    border-right: solid 48vw transparent;
+    border-top: solid 18vw $primary-color;
 }
