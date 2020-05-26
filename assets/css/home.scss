@@ -6,6 +6,7 @@
 #home-hero {
     @extend %centered;
     background-color: $primary-color;
+    width: 96vw;
 }
 
 #home-logo > img {
