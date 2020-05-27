@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="{{site.baseurl}}/assets/css/{{stylesheet}}.css">
     {% endfor %}
     {% endif %}
-
+    {% if page.custom_font %}
+     {% include {{page.custom_font}}.html %}
+    {% endif %}
     {% feed_meta %}
     {% seo %}
   </head>
