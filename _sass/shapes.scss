@@ -1,4 +1,4 @@
-$home-header-primary-color:rgb(245, 245, 245);
+$home-header-primary-color:white;
 $home-header-z-index: 2;
 $home-triangle-border-width: 48vw;
 $home-triangle-height: 8vh;
@@ -24,4 +24,14 @@ $home-triange-shadow-color: lightgrey;
     position: absolute;
     border-right: solid $home-triangle-border-width $home-triange-shadow-color;
     filter: drop-shadow(-16px -3px 7px $home-triange-shadow-color);
+}
+
+.polygon-shadow-right-bottom {
+    height: 2px;
+    border-bottom: solid 8vh transparent;
+    z-index: 1;
+    position: absolute;
+    border-left: solid 48vw lightgrey;
+    left: 50vw;
+    filter: drop-shadow(16px -3px 7px lightgrey);
 }
