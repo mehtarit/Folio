@@ -3,5 +3,28 @@
 
 footer {
   position: absolute;
-  bottom: 20px;
+  bottom: 4vh;
+}
+
+.above-3 {
+  z-index: 3;
+}
+
+.triangle-up-left {
+  border-left: solid 48vw transparent;
+  border-right: solid 0px transparent;
+  border-bottom: solid 8vh lightgrey;
+  position: absolute;
+  right: 12vw;
+  bottom: -3vh;
+  z-index: 2;
+}
+
+.triangle-up-right {
+  border-right: solid 48vw transparent;
+  border-left: solid 0px transparent;
+  border-bottom: solid 8vh lightgrey;
+  position: absolute;
+  bottom: -3vh;
+  left: 12vw;
 }
