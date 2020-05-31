@@ -4,6 +4,33 @@
 footer {
   position: absolute;
   bottom: 4vh;
+
+  nav {
+    position: relative;
+    top: 1vh;
+  }
+
+  .left-most {
+    position: relative;
+    left: -4vw;
+    font-family: "Laila", serif;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 1.4em;
+    bottom: -1.6vh;
+  }
+
+  .right-most {
+    position: relative;
+    right: -6vw;
+    font-family: "Laila", serif;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 1.4em;
+    bottom: -1.6vh;
+  }
 }
 
 .above-3 {
@@ -15,7 +42,7 @@ footer {
   border-right: solid 0px transparent;
   border-bottom: solid 8vh lightgrey;
   position: absolute;
-  right: 12vw;
+  right: 18vw;
   bottom: -3vh;
   z-index: 2;
 }
@@ -26,5 +53,5 @@ footer {
   border-bottom: solid 8vh lightgrey;
   position: absolute;
   bottom: -3vh;
-  left: 12vw;
+  left: 18vw;
 }
