@@ -1,16 +1,16 @@
-
 @import "alignment";
 
 body {
   @extend %centered;
 }
 
-nav{ 
+nav {
   display: flex;
+  align-items: center;
 }
 
 .current {
-    color: green;
+  color: green;
 }
 
 .mobile-hidden {
@@ -19,7 +19,7 @@ nav{
 
 $breakpoint-tablet: 768px;
 @media (min-width: $breakpoint-tablet) {
-  .mobile-hidden{
+  .mobile-hidden {
     display: flex;
   }
 }

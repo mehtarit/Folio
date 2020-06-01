@@ -8,50 +8,9 @@ footer {
   nav {
     position: relative;
     top: 1vh;
+
+    a {
+      margin: 10px;
+    }
   }
-
-  .left-most {
-    position: relative;
-    left: -4vw;
-    font-family: "Laila", serif;
-    text-decoration: none;
-    color: black;
-    font-weight: 600;
-    font-size: 1.4em;
-    bottom: -1.6vh;
-  }
-
-  .right-most {
-    position: relative;
-    right: -6vw;
-    font-family: "Laila", serif;
-    text-decoration: none;
-    color: black;
-    font-weight: 600;
-    font-size: 1.4em;
-    bottom: -1.6vh;
-  }
-}
-
-.above-3 {
-  z-index: 3;
-}
-
-.triangle-up-left {
-  border-left: solid 48vw transparent;
-  border-right: solid 0px transparent;
-  border-bottom: solid 8vh lightgrey;
-  position: absolute;
-  right: 18vw;
-  bottom: -3vh;
-  z-index: 2;
-}
-
-.triangle-up-right {
-  border-right: solid 48vw transparent;
-  border-left: solid 0px transparent;
-  border-bottom: solid 8vh lightgrey;
-  position: absolute;
-  bottom: -3vh;
-  left: 18vw;
 }
