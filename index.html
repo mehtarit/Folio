@@ -6,18 +6,13 @@ custom_font: home-font
 ---
 
 <nav>
-    <a href="{{site.baseurl}}/blog.html">All Posts</a>
-    <form action="{{site.baseurl}}/search.html" method="get">
-        <label for="search-box"></label>
-        <input type="text" id="search-box" name="query">
-        <input type="submit" value="search">
-    </form>
+  <a href="{{site.baseurl}}/blog.html">All Posts</a>
 </nav>
 
 <a href="{{ site.posts.first.url }}">
-    <article>
-        <p>Latest</p>
-        <h3>{{ site.posts.first.title }}</h3>
-        <h4>{{ site.posts.first.date | date: '%B %d, %Y' }}</h4>
-    </article>
-  </a>
+  <article>
+    <p>Latest</p>
+    <h3>{{ site.posts.first.title }}</h3>
+    <h4>{{ site.posts.first.date | date: '%B %d, %Y' }}</h4>
+  </article>
+</a>
