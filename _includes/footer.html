@@ -82,7 +82,8 @@
       </svg>
     </a>
     <a href="#" class="open-search">
-      <svg xmlns="http://www.w3.org/2000/svg" 
+      <svg xmlns="http://www.w3.org/2000/svg"
+        class="search-icon" 
         x="0px" 
         y="0px"
         width="50" 
@@ -127,8 +128,16 @@
     <div class="search-overlay hiding">
       <form action="{{site.baseurl}}/search.html" method="get">
         <label for="search-box"></label>
-        <input type="text" id="search-box" name="query" />
-        <input type="submit" value="search" />
+        <input 
+          class="input-search"
+          type="text" 
+          id="search-box" 
+          name="query"
+          placeholder="Search All Posts…" />
+        <input
+          class="submit-search"
+          type="submit" 
+          value="search" />
       </form>
     </div>    <!-- Search form overlay --
   </nav>

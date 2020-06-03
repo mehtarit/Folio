@@ -1,6 +1,11 @@
 ---
 ---
 
+$system: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+  sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+$breakpoint: 768px;
+
 footer {
   position: absolute;
   bottom: 4vh;
@@ -17,6 +22,34 @@ footer {
       position: absolute;
       overflow: hidden;
       clip: rect(0 0 0 0);
+    }
+
+    .input-search {
+      display: inline-block;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      line-height: normal;
+      border: none;
+      outline: none;
+      max-width: 100%;
+      font-family: $system;
+    }
+
+    .submit-search {
+      display: inline-block;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      line-height: normal;
+      border: none;
+      outline: none;
+      max-width: 100%;
+      font-family: $system;
+    }
+
+    .search-icon {
+      transition: 0.3s ease-out;
     }
   }
 }
