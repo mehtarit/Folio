@@ -6,6 +6,8 @@ $system: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial
 
 $breakpoint: 768px;
 
+$primary: #fd7f71;
+
 footer {
   position: absolute;
   bottom: 4vh;
@@ -16,6 +18,10 @@ footer {
 
     a {
       margin: 10px;
+    }
+
+    .icon {
+      fill: rgb(204, 204, 225);
     }
 
     .hiding {
@@ -50,6 +56,31 @@ footer {
 
     .search-icon {
       transition: 0.3s ease-out;
+    }
+
+    .button {
+      display: inline-block;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      line-height: normal;
+      border: none;
+      outline: none;
+      max-width: 100%;
+      font-family: $system;
+
+      cursor: pointer;
+      color: $primary;
+      transition: 0.3s ease-out;
+
+      &:hover,
+      &:focus {
+        transform: scale(1.125);
+
+        .search-icon {
+          transform: scale(1.25);
+        }
+      }
     }
   }
 }
