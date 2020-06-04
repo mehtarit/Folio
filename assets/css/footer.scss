@@ -58,6 +58,28 @@ footer {
       transition: 0.3s ease-out;
     }
 
+    .open-search {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+
+      width: 96px;
+      height: 96px;
+      border-radius: 48px;
+
+      background-color: $white;
+      box-shadow: 0 1px 1px rgba($background-3, 0.6),
+        0 3px 3px rgba($background-3, 0.4), 0 8px 16px rgba($background-3, 0.3);
+
+      &:hover,
+      &:focus {
+        box-shadow: 0 2px 2px rgba($background-3, 0.4),
+          0 4px 4px rgba($background-3, 0.3),
+          0 12px 32px rgba($background-3, 0.3);
+      }
+    }
+
     .button {
       display: inline-block;
       -webkit-appearance: none;
