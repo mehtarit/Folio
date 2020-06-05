@@ -83,7 +83,7 @@
         </g>
       </svg>
     </a>
-    <a herf="#link-to-search" class="button button-open">
+    <a href="#link-to-search" class="button button-open">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="32"
@@ -114,35 +114,53 @@
           />
         </svg>
       </button>
-      <form action="#" class="form-search">
-        <label for="keywords" class="visuallyhidden">Search</label>
+      <form action="#" class="form-search" method="get">
+        <label for="search-box" class="visuallyhidden">Search</label>
         <input
           class="input input-search"
-          id="keywords"
-          name="keywords"
-          type="search"
+          id="search-box"
+          name="query"
+          type="text"
           placeholder="Find something…"
           autocorrect="off"
           autocapitalize="off"
           required
         />
-        <button type="submit" class="button button-search">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
-            viewBox="0 0 32 32"
-            class="icon"
-          >
-            <rect class="fill-none" width="32" height="32" />
-            <path
-              class="fill-currentcolor"
-              d="M29.82861,24.17139,25.56519,19.908A13.0381,13.0381,0,1,0,19.908,25.56525l4.26343,4.26337a4.00026,4.00026,0,0,0,5.65723-5.65723ZM5,14a9,9,0,1,1,9,9A9.00984,9.00984,0,0,1,5,14Z"
-            />
-          </svg>
-        </button>
+        <input type="submit" class="button button-search" value="search" />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+          class="icon"
+        >
+          <rect class="fill-none" width="32" height="32" />
+          <path
+            class="fill-currentcolor"
+            d="M29.82861,24.17139,25.56519,19.908A13.0381,13.0381,0,1,0,19.908,25.56525l4.26343,4.26337a4.00026,4.00026,0,0,0,5.65723-5.65723ZM5,14a9,9,0,1,1,9,9A9.00984,9.00984,0,0,1,5,14Z"
+          />
+        </svg>
+        />
       </form>
+      <ul id="search-results"></ul>
     </div>
   </nav>
 </footer>
 <script src="{{site.baseurl}}/assets/js/footer.js"></script>
+
+<script>
+  window.store = {
+    {% for post in site.posts %}
+      "{{ post.url | slugify }}": {
+        "title": "{{ post.title | xml_escape }}",
+        "author": "{{ post.author | xml_escape }}",
+        "category": "{{ post.category | xml_escape }}",
+        "content": {{ post.content | strip_html | strip_newlines | jsonify }},
+        "url": "{{ post.url | xml_escape }}"
+      }
+      {% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  };
+</script>
+<script src="https://unpkg.com/lunr/lunr.js"></script>
+<script src="{{site.baseurl}}/assets/js/search.js"></script>
