@@ -137,13 +137,14 @@ footer {
 }
 
 .button-search {
-  position: absolute;
+  position: relative;
   z-index: 2;
   top: 0;
   right: 0;
   background-color: transparent;
   cursor: pointer;
   padding: 25px $base-px * 2 21px;
+  color: black;
 
   // Same horizontal padding .input-search
   @media (min-width: $breakpoint) {
@@ -156,6 +157,8 @@ footer {
 .form-search {
   position: relative;
   width: 100%;
+  left: 1vw;
+  top: 10vh;
 
   @media (min-width: $breakpoint) {
     max-width: 720px;
@@ -202,7 +205,7 @@ footer {
   overflow: hidden;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: flex-start;
   align-content: flex-end;
 
   // Positioning
