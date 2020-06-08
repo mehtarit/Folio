@@ -139,12 +139,11 @@ footer {
 .button-search {
   position: relative;
   z-index: 2;
-  top: 0;
-  right: 0;
+  top: -10vh;
+  right: -78vw;
   background-color: transparent;
   cursor: pointer;
-  padding: 25px $base-px * 2 21px;
-  color: black;
+  padding: 25px 16px 21px;
 
   // Same horizontal padding .input-search
   @media (min-width: $breakpoint) {
@@ -173,12 +172,10 @@ footer {
   width: 100%;
 
   // Style
-  font-size: 18px;
+  font-size: 25px;
   font-weight: 600;
-  color: $primary;
-  background-color: $white;
-  box-shadow: 0 1px 1px rgba($background-3, 0.6),
-    0 3px 3px rgba($background-3, 0.4), 0 8px 16px rgba($background-3, 0.3);
+  color: black;
+  background-color: inherit;
 
   @media (min-width: $breakpoint) {
     // Sizing
@@ -191,12 +188,19 @@ footer {
 }
 
 .input-search::placeholder {
-  color: $primary-2;
+  color: grey;
 }
 .search-symbol {
-  bottom: 6.5vh;
-  position: relative;
-  left: 84vw;
+    position: relative;
+    color: grey;
+}
+
+#search-results {
+  top: 24vh;
+  position: absolute;
+  text-align: start;
+  padding-right: 6vw;
+  padding-left: 6vw;
 }
 // Overlay
 // ---------------------------
