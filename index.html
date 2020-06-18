@@ -9,11 +9,11 @@ custom_font: home-font
   <a href="{{site.baseurl}}/blog.html" class="boton">All Posts</a>
 </nav>
 
-<a href="{{ site.posts.first.url }}" id="latest-Post">
+<a href="{{ site.posts.first.url }}" id="highlighted-post">
   <article>
     <p>Latest</p>
-    <h3>{{ site.posts.first.title }}</h3>
-    <h4>{{ site.posts.first.date | date: '%B %d, %Y' }}</h4>
+    <h3 class="post-title">{{ site.posts.first.title }}</h3>
+    <h4 class="post-date">{{ site.posts.first.date | date: '%B %d, %Y' }}</h4>
   </article>
 </a>
 
